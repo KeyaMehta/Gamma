@@ -1,0 +1,44 @@
+/* Edit this file to restyle the whole site */
+:root {
+  /* color */
+  --ink: #0B1A3F;
+  --ink-soft: #33416A;
+  --surface: #F4F7FF;
+  --card: #FFFFFF;
+  --royal: #1D4ED8;
+  --royal-deep: #1239A8;
+  --wave: #3B6FD4;
+  --wave-soft: #DCE6FB;
+  --silver: #CBD5E6;
+  --cyan: #22D3EE;
+  --cyan-hover: #5BE3F5;
+
+  --gold: #E8B20E;
+  --silver-medal: #A9B4C6;
+  --bronze: #C97B3D;
+
+  /* type */
+  --font-display: 'Unbounded', 'Arial Black', sans-serif;
+  --font-body: 'Figtree', 'Segoe UI', sans-serif;
+  --font-util: 'Space Grotesk', 'Consolas', sans-serif;
+
+  --step--1: clamp(0.875rem, 0.85rem + 0.1vw, 0.95rem);
+  --step-0: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
+  --step-1: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --step-2: clamp(1.6rem, 1.3rem + 1.4vw, 2.4rem);
+  --step-3: clamp(2.2rem, 1.5rem + 3.4vw, 4.4rem);
+
+  /* space (8px scale) */
+  --s-1: 8px;  --s-2: 16px; --s-3: 24px;
+  --s-4: 32px; --s-5: 48px; --s-6: 64px;
+  --s-7: 96px; --s-8: 128px;
+
+  --radius: 20px;
+  --radius-sm: 12px;
+  --shadow: 0 1px 2px rgba(11, 26, 63, .06), 0 8px 24px rgba(29, 78, 216, .08);
+  --shadow-lift: 0 2px 4px rgba(11, 26, 63, .08), 0 16px 40px rgba(29, 78, 216, .16);
+
+  --max: 1200px;
+  --measure: 66ch;
+  --nav-h: 72px;
+}

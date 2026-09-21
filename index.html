@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gamma House | Bombay International School</title>
+  <meta name="description" content="Gamma House at Bombay International School: Co-Curricular Cup champions 2025-26.">
+  <meta name="theme-color" content="#1D4ED8">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Permanent+Marker&family=Space+Grotesk:wght@500;700&family=Unbounded:wght@600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="home">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav" id="site-header"></header>
+  <main id="main">
+    <section class="hero">
+      <svg class="hero__waves" viewBox="0 0 2880 320" preserveAspectRatio="none" aria-hidden="true">
+        <path class="w w1" d="M0 150 C240 100 480 200 720 150 S1200 200 1440 150 S1920 200 2160 150 S2640 200 2880 150 V320 H0Z"/>
+        <path class="w w2" d="M0 205 C240 167 480 243 720 205 S1200 243 1440 205 S1920 243 2160 205 S2640 243 2880 205 V320 H0Z"/>
+        <path class="w w3" d="M0 260 C240 234 480 286 720 260 S1200 286 1440 260 S1920 286 2160 260 S2640 286 2880 260 V320 H0Z"/>
+      </svg>
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Bombay International School</p>
+          <a class="cup-badge" id="cup-badge" href="results.html"></a>
+          <h1>Welcome to <span class="hl">Gamma House</span></h1>
+          <p class="hero__motto">Bleed Blue</p>
+          <p class="hero__sub">One house, every grade from 1 to 12, competing together across sports and co-curricular events.</p>
+          <div class="hero__ctas">
+            <a class="btn btn--royal" href="events.html">View Upcoming Events</a>
+            <a class="btn btn--cyan js-wa" href="join.html">Join WhatsApp Chat</a>
+          </div>
+          <div class="hero__stats" id="hero-stats"></div>
+        </div>
+        <div class="hero__art">
+          <div class="logo-stage">
+            <div class="ripple" aria-hidden="true"></div>
+            <img class="hero__logo" src="images/gamma-logo.png" alt="Gamma House logo: a dolphin leaping beside the Greek letter gamma" width="362" height="297">
+          </div>
+          <div class="nextup" id="nextup" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="cup" id="cup"></div>
+      </div>
+    </section>
+
+    <section class="section section--flush">
+      <div class="wrap">
+        <header class="section__head section__head--row">
+          <div><p class="eyebrow">Coming up</p><h2>Next on the calendar</h2></div>
+          <a class="btn btn--royal btn--sm" href="events.html">All upcoming events</a>
+        </header>
+        <div class="cards" id="home-upcoming"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="tiles">
+          <a class="tile" href="results.html" style="background-image:url('images/gallery/thumbs/hands-in.jpg')"><span class="tile__k">Results</span><span class="tile__t">Past Events &amp; Winners</span></a>
+          <a class="tile" href="info.html" style="background-image:url('images/gallery/thumbs/quiz-on-stage.jpg')"><span class="tile__k">Details</span><span class="tile__t">Event Info &amp; Sign-ups</span></a>
+          <a class="tile" href="join.html" style="background-image:url('images/gallery/thumbs/gamma-flag.jpg')"><span class="tile__k">Community</span><span class="tile__t">Join the WhatsApp Group</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="wrap">
+        <header class="section__head"><p class="eyebrow">Highlights</p><h2>Gamma in action</h2></header>
+        <div class="gallery-block" id="gallery-block"><div class="gallery" id="gallery"></div></div>
+      </div>
+    </section>
+
+    <section class="community" id="join-band">
+      <div class="chant" aria-hidden="true"><div class="chant__track js-chant"></div></div>
+      <div class="wrap community__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">Join the community</p>
+          <h2>Stay Connected with Gamma House</h2>
+          <p class="community__text">Event reminders, sign-ups, and results, shared with the whole house in one place.</p>
+          <a class="btn btn--cyan btn--lg js-wa" href="join.html">Join Gamma House WhatsApp Group</a>
+        </div>
+        <div class="qr">
+          <div class="qr__code js-qr"></div>
+          <p class="qr__label">Scan with your phone camera</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+
+  <dialog class="modal" id="event-modal" aria-labelledby="modal-title">
+    <div class="modal__body" id="modal-body"></div>
+    <form method="dialog"><button class="modal__close" aria-label="Close">×</button></form>
+  </dialog>
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <img id="lb-img" alt="">
+    <p id="lb-cap"></p>
+    <button class="lb-nav lb-prev" aria-label="Previous photo">‹</button>
+    <button class="lb-nav lb-next" aria-label="Next photo">›</button>
+    <form method="dialog"><button class="modal__close" aria-label="Close">×</button></form>
+  </dialog>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

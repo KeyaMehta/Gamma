@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Upcoming Events | Gamma House</title>
+  <meta name="description" content="Upcoming interhouse events for Gamma House.">
+  <meta name="theme-color" content="#1D4ED8">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Permanent+Marker&family=Space+Grotesk:wght@500;700&family=Unbounded:wght@600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="events">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav" id="site-header"></header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero__bg" style="background-image:url('images/gallery/stage-band-dancers.jpg')" aria-hidden="true"></div>
+      <div class="wrap page-hero__inner">
+        <p class="eyebrow eyebrow--light">What’s next</p>
+        <h1>Upcoming Events</h1>
+        <p class="page-hero__lede">Every interhouse event coming up this term. Past events move to the results page automatically.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="cards" id="upcoming-cards"></div>
+        <div class="season">
+          <div class="season__head">
+            <h2 class="h3">Full calendar</h2>
+            <div class="chips" role="group" aria-label="Filter by category" data-target="season"></div>
+          </div>
+          <div id="season-list"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+
+  <dialog class="modal" id="event-modal" aria-labelledby="modal-title">
+    <div class="modal__body" id="modal-body"></div>
+    <form method="dialog"><button class="modal__close" aria-label="Close">×</button></form>
+  </dialog>
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <img id="lb-img" alt="">
+    <p id="lb-cap"></p>
+    <button class="lb-nav lb-prev" aria-label="Previous photo">‹</button>
+    <button class="lb-nav lb-next" aria-label="Next photo">›</button>
+    <form method="dialog"><button class="modal__close" aria-label="Close">×</button></form>
+  </dialog>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

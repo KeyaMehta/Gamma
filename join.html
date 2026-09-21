@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Join the Community | Gamma House</title>
+  <meta name="description" content="Join the Gamma House WhatsApp group.">
+  <meta name="theme-color" content="#1D4ED8">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Permanent+Marker&family=Space+Grotesk:wght@500;700&family=Unbounded:wght@600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="join">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav" id="site-header"></header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero__bg" style="background-image:url('images/gallery/gamma-together.jpg')" aria-hidden="true"></div>
+      <div class="wrap page-hero__inner">
+        <p class="eyebrow eyebrow--light">Join the community</p>
+        <h1>Join Gamma House</h1>
+        <p class="page-hero__lede">Scan the code or tap the button to join the house WhatsApp group.</p>
+      </div>
+    </section>
+    <section class="community" id="join-band">
+      <div class="chant" aria-hidden="true"><div class="chant__track js-chant"></div></div>
+      <div class="wrap community__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">Join the community</p>
+          <h2>Stay Connected with Gamma House</h2>
+          <p class="community__text">Event reminders, sign-ups, and results, shared with the whole house in one place.</p>
+          <a class="btn btn--cyan btn--lg js-wa" href="join.html">Join Gamma House WhatsApp Group</a>
+        </div>
+        <div class="qr">
+          <div class="qr__code js-qr"></div>
+          <p class="qr__label">Scan with your phone camera</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+
+  <dialog class="modal" id="event-modal" aria-labelledby="modal-title">
+    <div class="modal__body" id="modal-body"></div>
+    <form method="dialog"><button class="modal__close" aria-label="Close">×</button></form>
+  </dialog>
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <img id="lb-img" alt="">
+    <p id="lb-cap"></p>
+    <button class="lb-nav lb-prev" aria-label="Previous photo">‹</button>
+    <button class="lb-nav lb-next" aria-label="Next photo">›</button>
+    <form method="dialog"><button class="modal__close" aria-label="Close">×</button></form>
+  </dialog>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
